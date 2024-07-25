@@ -1,0 +1,109 @@
+[global]
+ip = "0.0.0.0"
+port = 3000
+
+
+[api]
+
+[api.openai]
+api-type = "openai"
+api-key-env = "OPENAI_API_KEY"
+
+
+[models]
+
+[models."openai/gpt-4o-2024-05-13"]
+api-id = "openai"
+remote-id = "gpt-4o-2024-05-13"
+model-type = ["chat-completion"]
+context-length = 128_000
+max-input-tokens = 128_000
+max-output-tokens = 4096
+input-token-cost = 0.000005
+output-token-cost = 0.000015
+tokens-per-minute = 800_000
+requests-per-minute = 5000
+shares-limits = true
+group = ["openai/gpt-4o"]
+
+[models."openai/gpt-4o-mini-2024-07-18"]
+api-id = "openai"
+remote-id = "gpt-4o-mini-2024-07-18"
+model-type = ["chat-completion"]
+context-length = 128_000
+max-input-tokens = 128_000
+max-output-tokens = 16384
+input-token-cost = 0.00000015
+output-token-cost = 0.0000006
+shares-limits = true
+group = ["openai/gpt-4o-mini"]
+
+[models."openai/gpt-4-turbo-2024-04-09"]
+api-id = "openai"
+remote-id = "gpt-4-turbo-2024-04-09"
+model-type = ["chat-completion"]
+context-length = 128_000
+max-input-tokens = 128_000
+max-output-tokens = 4096
+input-token-cost = 0.00001
+output-token-cost = 0.00003
+tokens-per-minute = 600_000
+requests-per-minute = 5000
+shares-limits = true
+group = ["openai/gpt-4-turbo"]
+
+[models."openai/gpt-4-turbo-0125"]
+api-id = "openai"
+remote-id = "gpt-4-0125-preview"
+model-type = ["chat-completion"]
+context-length = 128_000
+max-input-tokens = 128_000
+max-output-tokens = 4096
+input-token-cost = 0.00001
+output-token-cost = 0.00003
+tokens-per-minute = 600_000
+requests-per-minute = 5000
+shares-limits = true
+group = ["openai/gpt-4-turbo"]
+
+[models."openai/gpt-4-turbo-1106"]
+api-id = "openai"
+remote-id = "gpt-4-1106-preview"
+model-type = ["chat-completion"]
+context-length = 128_000
+max-input-tokens = 128_000
+max-output-tokens = 4096
+input-token-cost = 0.00001
+output-token-cost = 0.00003
+tokens-per-minute = 600_000
+requests-per-minute = 5000
+shares-limits = true
+group = ["openai/gpt-4-turbo"]
+
+[models."openai/gpt-3.5-turbo-0125"]
+api-id = "openai"
+remote-id = "gpt-3.5-turbo-0125"
+model-type = ["chat-completion"]
+context-length = 16385
+max-input-tokens = 16385
+max-output-tokens = 4096
+input-token-cost = 0.0000005
+output-token-cost = 0.0000015
+tokens-per-minute = 4_000_000
+requests-per-minute = 5000
+shares-limits = false
+group = ["openai/gpt-3.5-turbo"]
+
+[models."openai/gpt-3.5-turbo-1106"]
+api-id = "openai"
+remote-id = "gpt-3.5-turbo-1106"
+model-type = ["chat-completion"]
+context-length = 16385
+max-input-tokens = 16385
+max-output-tokens = 4096
+input-token-cost = 0.000001
+output-token-cost = 0.000002
+tokens-per-minute = 4_000_000
+requests-per-minute = 5000
+shares-limits = false
+group = ["openai/gpt-3.5-turbo"]
